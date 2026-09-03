@@ -53,4 +53,18 @@ assert(mix.choose({{id="STAGE",primaryType="FIRE",stage=1}},
 local mod={content={pokemon={get=function(_,id) return records[id] end}}}
 local result,count,rolls=mix.mixParty(mod,{{species="SENTRET",level=5}}, {},stages,first)
 assert(result[1].species=="SENTRET" and count==0 and rolls[1]==1)
+local pool=mix.buildPool(mod,dex,stages,specials)
+local function rollGeneration(n)
+  return function(lo,hi) return hi==9 and n or lo end
+end
+-- Gen II: preserve only when the roll matches the authored species generation.
+local kept,keptCount=mix.mixParty(mod,{{species="SENTRET",level=5}},pool,
+  stages,rollGeneration(2),dex,true)
+assert(kept[1].species=="SENTRET" and keptCount==0)
+local replaced,replacedCount=mix.mixParty(mod,{{species="SENTRET",level=5}},pool,
+  stages,rollGeneration(1),dex,true)
+assert(replaced[1].species=="PIDGEY" and replacedCount==1)
+local native,nativeCount=mix.mixParty(mod,{{species="PIDGEY",level=5}},pool,
+  stages,rollGeneration(1),dex,true)
+assert(native[1].species=="PIDGEY" and nativeCount==0)
 print("Trainer mix tests passed: Gen I and G/S/C schemas, matching, exclusions, metadata, Gen I keep roll")

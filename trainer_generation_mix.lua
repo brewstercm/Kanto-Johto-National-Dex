@@ -1,6 +1,7 @@
 -- Gives every enemy trainer slot an independent 1-9 roll while preserving
--- the original slot's level and other authored fields. A 1 keeps the authored
--- species. Rolls 2-9 choose from that generation with this priority: same
+-- the original slot's level and other authored fields. In R/B/Y, a 1 keeps
+-- the authored species. In G/S/C, its own generation keeps it unchanged.
+-- Other rolls choose from that generation with this priority: same
 -- primary type + evolution stage, same primary type, same stage, then any
 -- ordinary species from the rolled generation.
 
@@ -91,7 +92,7 @@ local function copySlot(slot)
   return out
 end
 
-function M.mixParty(mod,party,pool,stageData,rng)
+function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2)
   local mixed,replaced,rolls={},0,{}
   for index,slot in ipairs(party or {}) do
     local out=copySlot(slot)
@@ -101,9 +102,12 @@ function M.mixParty(mod,party,pool,stageData,rng)
         and type(record.types)=="table" and type(record.types[1])=="string" then
       local generation=rng(1,9)
       rolls[index]=generation
-      -- Generation 1 is the explicit vanilla result: retain this trainer's
-      -- authored species rather than exchanging it for a different Gen 1 mon.
-      if generation~=1 then
+      -- R/B/Y retains the explicit Gen I keep roll. G/S/C instead compares
+      -- the roll with the authored species' generation before replacement.
+      local originalGeneration=generationOf(dexArt and dexArt[original]
+        and dexArt[original].dex)
+      local keepGeneration=gen2 and originalGeneration or 1
+      if generation~=keepGeneration then
         local evolution=stageData and stageData[original]
         local stage=tonumber(evolution and evolution.stage) or 1
         out.species=M.choose(pool[generation],original,record.types[1],stage,rng)
@@ -129,7 +133,7 @@ function M.install(mod,dexArt,stageData,specials,rng)
       local mixed,changed={},0
       for memberIndex,member in ipairs(record.trainers) do
         local out=copySlot(member)
-        local result,count=M.mixParty(mod,member.party,pool,stageData,rng)
+        local result,count=M.mixParty(mod,member.party,pool,stageData,rng,dexArt,true)
         out.party=result
         mixed[memberIndex]=out
         changed=changed+count
