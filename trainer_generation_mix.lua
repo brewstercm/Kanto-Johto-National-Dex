@@ -123,7 +123,31 @@ function M.install(mod,dexArt,stageData,specials,rng)
   local trainers,parties,slots,replaced,failed=0,0,0,0,0
   for _,id in ipairs(trainerIds(mod.content.trainers)) do
     local ok,record=pcall(function() return mod.content.trainers:get(id) end)
-    if ok and type(record)=="table" and type(record.parties)=="table" then
+    if ok and type(record)=="table" and type(record.trainers)=="table" then
+      -- G/S/C classes contain named trainer members, each with its own party.
+      -- Copy members rather than dropping names, trainerType or rematch IDs.
+      local mixed,changed={},0
+      for memberIndex,member in ipairs(record.trainers) do
+        local out=copySlot(member)
+        local result,count=M.mixParty(mod,member.party,pool,stageData,rng)
+        out.party=result
+        mixed[memberIndex]=out
+        changed=changed+count
+        parties=parties+1
+        slots=slots+#result
+      end
+      if #mixed>0 then
+        local patched=pcall(function()
+          mod.content.trainers:patch(id,{trainers=mixed})
+        end)
+        if patched then
+          trainers=trainers+1
+          replaced=replaced+changed
+        else
+          failed=failed+1
+        end
+      end
+    elseif ok and type(record)=="table" and type(record.parties)=="table" then
       local mixed={}
       local changed=0
       for partyIndex,party in ipairs(record.parties) do
