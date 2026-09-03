@@ -309,7 +309,8 @@ local function completionRow(mapId, terrain)
   return completionPoolCache[cacheKey] or nil
 end
 
-local function groupedByGeneration(pool,encDef,rolled)
+local nativeEncounterPool=ownModule("native_encounter_pool.lua")
+local function groupedByGeneration(pool,encDef,rolled,ctx)
   local groups,seen={},{ }
   for generation=1,9 do groups[generation]={};seen[generation]={} end
   local function add(slot)
@@ -331,9 +332,8 @@ local function groupedByGeneration(pool,encDef,rolled)
   end
   for _,slot in ipairs(pool or {}) do add(slot) end
 
-  -- Encounter definitions differ between R/B/Y and G/S (including nested
-  -- time-of-day tables). Walk the live definition so the current cartridge's
-  -- real native species join the same generation buckets.
+  -- Gen II passes all maps, terrains and time periods into this hook. Only
+  -- collect the active list; traversing encDef directly leaks distant mons.
   local visited,nativeRows={},0
   local function collect(value,depth)
     if type(value)~="table" or depth>7 or visited[value] then return end
@@ -344,16 +344,16 @@ local function groupedByGeneration(pool,encDef,rolled)
     end
     for _,child in pairs(value) do collect(child,depth+1) end
   end
-  collect(encDef,0)
+  collect(nativeEncounterPool(encDef,ctx,isGen1()),0)
   if nativeRows==0 then add(rolled) end
   return groups
 end
 
-local function applyGenerationBalance(base,mapId,terrain,encDef,rng)
+local function applyGenerationBalance(base,mapId,terrain,encDef,rng,ctx)
   if not base then return nil end
   local pool=completionRow(mapId,terrain)
   if not (pool and #pool>0) then return base end
-  local groups=groupedByGeneration(pool,encDef,base)
+  local groups=groupedByGeneration(pool,encDef,base,ctx)
   local represented={}
   for generation=1,9 do
     if #groups[generation]>0 then represented[#represented+1]=generation end
@@ -376,7 +376,7 @@ mod.hooks:wrap("encounter.roll",function(next,encDef,ctx)
     return rolled
   end
   return applyGenerationBalance(rolled,ctx.mapId,ctx.terrain,encDef,
-    ctx.rng or math.random)
+    ctx.rng or math.random,ctx)
 end,1000)
 
 -- -------------------------------------------------------------------------
