@@ -1,0 +1,10 @@
+{
+  "version": "0.8.2",
+  "feature": "CHEATS / NO BATTLES",
+  "checks": {
+    "integrated_exports_checked_first": true,
+    "legacy_gameshark_fallback_retained": true,
+    "kanto_johto_authoritative_encounter_guard": true,
+    "duplicate_battle_blocker_added": false
+  }
+}

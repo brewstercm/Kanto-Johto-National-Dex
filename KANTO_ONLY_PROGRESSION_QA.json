@@ -1,0 +1,158 @@
+{
+  "version": "0.9.11-kanto-only",
+  "dexSpecies": 1025,
+  "unobtainableSpecies": [],
+  "starterGiftBases": 27,
+  "visibleStarterGiftBasesByGame": {
+    "red": 27,
+    "blue": 27,
+    "yellow": 24,
+    "gold": 27,
+    "silver": 27,
+    "crystal": 27
+  },
+  "hiddenKantoStarterGiftAides": {
+    "games": [ "yellow" ],
+    "species": [ "BULBASAUR", "CHARMANDER", "SQUIRTLE" ],
+    "yellowAcquisition": "native cartridge gifts",
+    "gen2Acquisition": "mod-added Oak aides in Gold, Silver, and Crystal",
+    "preserveOtherGiftCoordinates": true
+  },
+  "starterFamilyMembers": 81,
+  "legendaryAndMythicalCatalog": 94,
+  "addedGen1Statics": 90,
+  "addedGen2Statics": 89,
+  "gen1NativeStaticsRetained": 4,
+  "gen2NativeStaticsRetained": 5,
+  "familyQuests": {
+    "totalQuestlines": 29,
+    "catalogDrivenQuestlines": 26,
+    "specialSpeciesCovered": 94,
+    "nativeEncounterPolicy": "retain object and consume Pokedex capture state",
+    "mewtwoRbyEncounterPatched": false,
+    "mewRequiresMewtwoCaught": true,
+    "legendaryBirds": {
+      "researcherMap": "PEWTER_CITY",
+      "members": [ "ARTICUNO", "ZAPDOS", "MOLTRES" ],
+      "order": "non-linear"
+    },
+    "regis": {
+      "researcherMap": "FUCHSIA_CITY",
+      "requiredBadge": "VOLCANOBADGE",
+      "sequence": [ "REGIROCK", "REGICE", "REGISTEEL" ],
+      "branches": [ "REGIELEKI", "REGIDRAGO" ],
+      "finale": "REGIGIGAS"
+    },
+    "lunarDuo": {
+      "researcherMap": "LAVENDER_TOWN",
+      "requiredBadge": "VOLCANOBADGE",
+      "sequence": [ "CRESSELIA", "DARKRAI" ]
+    },
+    "persistentFlags": true,
+    "advancesOnlyWhenCaught": true,
+    "researcherCoordinates": "collision-selected after gifts and statics"
+  },
+  "expandedKantoWildSpecies": 774,
+  "expandedKantoWildSpeciesScope": "Red/Blue/Yellow",
+  "gen2WildOverlay": {
+    "uniqueSpecies": 774,
+    "johtoMaps": 68,
+    "kantoMaps": 35,
+    "johtoSpeciesPlacements": 483,
+    "kantoSpeciesPlacements": 291
+  },
+  "nativeKantoWildSpecies": 65,
+  "removedImportedMaps": 114,
+  "runtimeJ2References": 0,
+  "regigigasChamber": {
+    "map": "KND_REGIGIGAS_CHAMBER",
+    "gen1Entrance": { "map": "VICTORY_ROAD_2F", "x": 9, "y": 13, "sprite": "KJT_SPRITE_SCIENTIST" },
+    "gen2Entrance": { "map": "VICTORY_ROAD", "coordinates": "collision-selected" },
+    "requiredPartySpecies": [ "REGIROCK", "REGICE", "REGISTEEL" ],
+    "pokedexLabel": "K: REGIGIGAS CHAMBER",
+    "nativeTilesetDerivedAtRuntime": true,
+    "scriptedReturn": true
+  },
+  "sprigatitoGift": {
+    "map": "ROUTE_18",
+    "x": 13,
+    "y": 11
+  },
+  "quaxlyGift": {
+    "map": "PEWTER_CITY",
+    "x": 34,
+    "y": 2
+  },
+  "froakieGift": {
+    "map": "ROUTE_9",
+    "x": 3,
+    "y": 9
+  },
+  "cyndaquilGift": {
+    "map": "CELADON_CITY",
+    "x": 46,
+    "y": 24
+  },
+  "sobbleGift": {
+    "map": "ROUTE_18",
+    "x": 35,
+    "y": 16
+  },
+  "oshawottGift": {
+    "map": "SAFFRON_CITY",
+    "x": 23,
+    "y": 34
+  },
+  "mudkipGift": {
+    "map": "VIRIDIAN_CITY",
+    "x": 35,
+    "y": 2
+  },
+  "chimcharGift": {
+    "map": "ROUTE_2",
+    "x": 12,
+    "y": 44
+  },
+  "tepigGift": {
+    "map": "ROUTE_5",
+    "x": 17,
+    "y": 32
+  },
+  "rowletGift": {
+    "map": "ROUTE_10_NORTH",
+    "x": 2,
+    "y": 29
+  },
+  "littenGift": {
+    "map": "ROUTE_11",
+    "x": 9,
+    "y": 0
+  },
+  "popplioGift": {
+    "map": "ROUTE_13",
+    "x": 36,
+    "y": 3
+  },
+  "grookeyGift": {
+    "map": "ROUTE_15",
+    "x": 15,
+    "y": 4
+  },
+  "scorbunnyGift": {
+    "map": "ROUTE_15",
+    "x": 15,
+    "y": 13
+  },
+  "placementPolicy": {
+    "region": "kanto",
+    "usesNativeMapCollision": true,
+    "avoidsWarpsSignsAndExistingActors": true,
+    "authoredStarterCoordinateFallback": "nearest collision-safe unreserved tile on the same map, otherwise retain the allocator's already-safe slot",
+    "authoredCoordinateMismatchIsNonFatal": true,
+    "preferredAddedActorDistance": 5,
+    "fallbackMinimumDistance": 1,
+    "starterMaps": 27,
+    "gen1StaticMapPool": 28,
+    "gen2KantoStaticMapPool": 15
+  }
+}

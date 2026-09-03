@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.zip
+.codex*/
+.venv/
+.pytest_cache/

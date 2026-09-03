@@ -1,0 +1,10 @@
+{
+  "version": "0.8.8",
+  "issue": "Poké Ball briefly disappeared between impact/hide and the first shake",
+  "cause": "SHAKE_ANIM starts with a fresh empty OAM buffer while its leading setup and 40-frame pause are rendered",
+  "fix": "Fill only SHAKE_ANIM's leading empty steps with its first visible closed-ball sprite set",
+  "timing_changed": false,
+  "catch_logic_changed": false,
+  "other_animation_blank_frames_changed": false,
+  "duplicate_capture_hook_added": false
+}

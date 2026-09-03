@@ -1,0 +1,25 @@
+{
+  "version": "0.9.0",
+  "feature": "automatic_gym_leader_post_battle_dialogue",
+  "checks": [
+    {
+      "name": "single_source",
+      "pass": true,
+      "detail": "Uses existing battle.ended leader recognition and queues one overworld textbox; no second battle hook."
+    },
+    {
+      "name": "deferred_to_overworld",
+      "pass": true,
+      "detail": "Dialogue is displayed from OverworldController.update after returning to the matching gym map."
+    },
+    {
+      "name": "normal_trainers_unchanged",
+      "pass": true
+    },
+    {
+      "name": "clair_special_case",
+      "pass": true,
+      "detail": "Clair directs player to Dragon Den and does not receive the Rising Badge early."
+    }
+  ]
+}

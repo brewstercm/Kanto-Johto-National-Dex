@@ -1,0 +1,11 @@
+{
+  "source": "PokeAPI official CSV tables",
+  "source_species": 456,
+  "evolution_edges": 483,
+  "display_records": 822,
+  "canonical_level": 347,
+  "canonical_stone": 30,
+  "approximated_stone": 18,
+  "approximated_level": 62,
+  "trade_to_level": 26
+}

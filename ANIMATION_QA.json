@@ -1,0 +1,10 @@
+{
+  "cutoff": 1025,
+  "speciesSheets": 1025,
+  "frontSheets": 1025,
+  "backSheets": 1025,
+  "fps": 12,
+  "runtime": "lazy ImageData frame crop from horizontal PNG strips",
+  "missing": [],
+  "version": "0.2.4"
+}

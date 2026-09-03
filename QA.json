@@ -1,0 +1,65 @@
+{
+  "stats": {
+    "maps": 368,
+    "objects": 1317,
+    "trainers_on_maps": 341,
+    "event_npcs": 39,
+    "normal_npcs": 766,
+    "berry_trees": 30,
+    "signs": 389,
+    "route30_battle_group": 1,
+    "olivine_ship_guard": 1
+  },
+  "route30GateFailures": [],
+  "olivineShipGateFailures": [],
+  "ledgeRows": 559,
+  "semanticWarpChecks": 1190,
+  "warpTileFailures": [],
+  "doorSemanticChecks": 320,
+  "carpetWarpChecks": 451,
+  "doorSemanticFailures": [],
+  "outdoorBorderFailures": [],
+  "trainerRosterEntries": 496,
+  "pokemonRegistered": 100,
+  "picFallbacks": [
+    "UNOWN"
+  ],
+  "newBarkSpawnCollision": 0,
+  "newBarkWestSeamCells": [
+    8,
+    9
+  ],
+  "newBarkEastSeamCells": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "mapsReachableFromNewBark": 357,
+  "majorJohtoMissing": [],
+  "fruitTreeObjects": 30,
+  "fruitTreeRumorFailures": [],
+  "fruitTreeTextFailures": [],
+  "advancedColorVariants": 86,
+  "gymLeadersPresent": [
+    "FALKNER",
+    "WHITNEY",
+    "BUGSY",
+    "MORTY",
+    "PRYCE",
+    "JASMINE",
+    "CHUCK",
+    "CLAIR",
+    "BROCK",
+    "MISTY",
+    "LT_SURGE",
+    "ERIKA",
+    "JANINE",
+    "SABRINA",
+    "BLAINE",
+    "BLUE"
+  ],
+  "missingGymLeaders": [],
+  "errors": [],
+  "version": "0.2.4"
+}

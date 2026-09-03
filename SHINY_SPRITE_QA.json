@@ -1,0 +1,23 @@
+{
+  "version": "0.9.11",
+  "source": "PokeAPI/sprites Black/White shiny collection with PokeAPI default fallback",
+  "sourceRepository": "https://github.com/PokeAPI/sprites",
+  "sourceCommit": "b2486a428a7548c874ad3900951d5334a40d21a5",
+  "license": "CC0-1.0 repository distribution; Pokemon imagery copyright The Pokemon Company",
+  "species": 1025,
+  "frontSheets": 1025,
+  "backSheets": 1025,
+  "totalSheets": 2050,
+  "totalFrames": 91216,
+  "sourceCounts": {
+    "black-white-animated": 1298,
+    "black-white-static": 623,
+    "pokeapi-default": 129
+  },
+  "aggregateSheetSha256": "08A449752E682AA07B15D82EE2F7EF94794457527E29DB9E54CD430DB75363F6",
+  "runtimeSelection": [
+    "mon.shiny",
+    "Gen 2 shiny DV pattern fallback"
+  ],
+  "normalSpriteFallback": true
+}

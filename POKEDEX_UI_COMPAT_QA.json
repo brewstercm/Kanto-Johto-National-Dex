@@ -1,0 +1,24 @@
+{
+  "version": "0.9.11",
+  "target_mod_id": "gen3_battle_ui",
+  "target_version_inspected": "2.0.1 local compatibility build",
+  "companion_ui_declares_content_dependency": true,
+  "circular_optional_dependency": false,
+  "catalog_provider": "mod.exports.pokedexAreas",
+  "catalog_records": 1025,
+  "integration_mode": "direct consumer inside companion UI mod",
+  "requires_debug_introspection": false,
+  "gen1_adapter": "DexUI.encounterDisplayRows",
+  "gen1_fields": [
+    "WILD LOCATIONS",
+    "METHOD"
+  ],
+  "gen2_adapter": "GoldCompat.dexCatchLocations",
+  "gen2_games": [ "gold", "silver", "crystal" ],
+  "gen2_field": "HABITAT DATA",
+  "native_method_rows_preserved": true,
+  "runtime_overlay_rows_merged": true,
+  "starter_gift_and_evolution_rows_merged": true,
+  "static_and_roaming_rows_merged": true,
+  "ui_mod_source": "https://github.com/HighDrexler/Gen-3-inspired-UI-overhaul-for-Gen1Recomp-V2.0"
+}

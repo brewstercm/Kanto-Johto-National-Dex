@@ -1,0 +1,41 @@
+{
+  "version": "0.9.11",
+  "manifestGames": [ "gen1", "gen2" ],
+  "legacyGen2CompatRemoved": true,
+  "crystalEngineFamily": "gen2",
+  "starterGiftAides": 27,
+  "distributedSpecialStatics": 89,
+  "wildOverlayMaps": 103,
+  "wildOverlayRegions": [ "johto", "kanto" ],
+  "nativeSpecialsRetained": [ "RAIKOU", "ENTEI", "SUICUNE", "LUGIA", "HO_OH" ],
+  "nativeEncounterDifferences": {
+    "raikou": "roaming",
+    "entei": "roaming",
+    "suicune": {
+      "method": "static",
+      "map": "TIN_TOWER_1F",
+      "level": 40
+    },
+    "lugia": "WHIRL_ISLAND_LUGIA_CHAMBER",
+    "hoOh": "TIN_TOWER_ROOF"
+  },
+  "importedCrystalRegistryChecks": {
+    "allPlacementMapsPresent": true,
+    "checkedStarterMaps": 27,
+    "regigigasEntranceMap": "VICTORY_ROAD",
+    "pokedexNativeMapsPresent": true,
+    "checkedStaticPoolMaps": 15
+  },
+  "sharedGen2Systems": [
+    "encounters",
+    "starter gifts",
+    "family quests",
+    "trainer generation mixing",
+    "evolutions",
+    "TM/HM compatibility",
+    "Pokédex AREA integration",
+    "QoL toggles",
+    "CHEATS"
+  ],
+  "yellowOnlyHiddenGiftAides": [ "BULBASAUR", "CHARMANDER", "SQUIRTLE" ]
+}

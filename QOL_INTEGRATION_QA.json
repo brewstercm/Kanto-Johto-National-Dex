@@ -1,0 +1,55 @@
+{
+  "version": "0.8.1",
+  "base": "Kanto-National-Dex-0.7.6",
+  "menu": {
+    "options_entry": "QOL",
+    "main_menu_entry": "CHEATS",
+    "always_catch": "CHEATS only",
+    "qol_layout": "scrollable full-width list; wrapped multi-line labels; no marquee labels"
+  },
+  "deduplicated": {
+    "exp_bar": "qol_toggles: EXP BAR",
+    "location_banner": "qol_toggles: MAP LOCATION",
+    "forgettable_hms": "qol_toggles: FORGETTABLE HMs",
+    "rename_anywhere": "qol_toggles: RENAME",
+    "party_summary_scroll": "qol_toggles: PARTY SCROLL",
+    "field_hm_shortcuts": "quality_of_life: EASY INTERACTIONS",
+    "repel_reuse_prompt": "quality_of_life: REPEL PROMPT",
+    "always_catch": "qol_toggles gameplay hook; controlled from CHEATS"
+  },
+  "standalone_conflicts": [
+    "qol_toggles",
+    "quality_of_life",
+    "swuff_qol",
+    "GameShark"
+  ],
+  "unique_swuff_retained": [
+    "BETTER BATTLES",
+    "COLOR ATTACKS",
+    "DVs / STAT EXP",
+    "MORE MOVE INFO",
+    "QUICK REORDER",
+    "CURSOR FLY MAP",
+    "NEW FLY SPOTS",
+    "RELEARN ANYWHERE",
+    "30-ITEM BAG",
+    "16 PC BOXES"
+  ],
+  "unique_quality_retained": [
+    "POK\u00e9DEX INDICATOR",
+    "EASY INTERACTIONS"
+  ],
+  "static_checks": {
+    "qol_options_entry": true,
+    "old_qol_toggles_options_label_removed": true,
+    "cheats_start_label": true,
+    "cheats_screen_title": true,
+    "quality_standalone_options_hook_removed": true,
+    "swuff_overlap_gate_present": true,
+    "standalone_loader_present": true,
+    "always_catch_removed_from_qol_rows": true,
+    "always_catch_added_to_cheats": true,
+    "qol_scrollable_multiline_layout": true
+  },
+  "static_checks_pass": true
+}

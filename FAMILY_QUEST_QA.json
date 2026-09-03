@@ -1,0 +1,119 @@
+{
+  "version": "0.9.11",
+  "questCount": 29,
+  "specialSpeciesCovered": 94,
+  "catalogQuestCount": 26,
+  "researchers": {
+    "legendaryBirds": "PEWTER_CITY",
+    "regis": "FUCHSIA_CITY",
+    "lunarDuo": "LAVENDER_TOWN"
+  },
+  "generationProfiles": {
+    "gen1": {
+      "id": "gen1_kanto",
+      "professor": "PROF.OAK",
+      "region": "kanto",
+      "existingResearcherMapsAndDialogRetained": true
+    },
+    "gen2": {
+      "id": "gen2_johto",
+      "professor": "PROF.ELM",
+      "region": "johto",
+      "researcherCount": 29,
+      "requiredBadgeForGatedFamilies": "RISING",
+      "nativeGoldSilverCrystalEncountersRetained": true,
+      "crystalStaticSuicuneRetained": true,
+      "researcherMaps": {
+        "BIRDS": "VIOLET_CITY",
+        "REGIS": "OLIVINE_CITY",
+        "LUNAR": "ECRUTEAK_CITY",
+        "GENESIS": "NEW_BARK_TOWN",
+        "BEASTS": "ECRUTEAK_CITY",
+        "EON": "ROUTE_39",
+        "WEATHER": "CIANWOOD_CITY",
+        "COSMIC": "VIOLET_CITY",
+        "CREATION": "BLACKTHORN_CITY",
+        "SEA": "ROUTE_40",
+        "SINNOH_WONDERS": "LAKE_OF_RAGE",
+        "SWORDS": "ROUTE_36",
+        "FORCES": "ROUTE_42",
+        "TAO": "MAHOGANY_TOWN",
+        "UNOVA_RELICS": "GOLDENROD_CITY",
+        "AURA": "ROUTE_37",
+        "KALOS_RELICS": "ROUTE_41",
+        "AETHER": "ROUTE_38",
+        "TAPUS": "ROUTE_34",
+        "LIGHT": "CHERRYGROVE_CITY",
+        "ALOLA_WONDERS": "ROUTE_35",
+        "MELTAN": "OLIVINE_CITY",
+        "HEROES": "ROUTE_45",
+        "ISLE": "ROUTE_32",
+        "ZARUDE": "ILEX_FOREST",
+        "CROWN": "ROUTE_44",
+        "TREASURES": "ROUTE_46",
+        "PALDEA_DEPTHS": "ROUTE_27",
+        "KITAKAMI": "ROUTE_43"
+      }
+    }
+  },
+  "legendaryBirds": {
+    "members": [ "ARTICUNO", "ZAPDOS", "MOLTRES" ],
+    "order": "non-linear",
+    "nativeRbyEncountersRetained": true,
+    "distributedGen2EncountersGated": true
+  },
+  "regis": {
+    "requiredBadge": "VOLCANOBADGE",
+    "levelBasis": "Blaine's team is the closest cross-version match to level 45",
+    "linearSequence": [ "REGIROCK", "REGICE", "REGISTEEL" ],
+    "unlockedBranches": [ "REGIELEKI", "REGIDRAGO" ],
+    "regigigasRequirement": [ "REGIROCK", "REGICE", "REGISTEEL" ]
+  },
+  "lunarDuo": {
+    "requiredBadge": "VOLCANOBADGE",
+    "linearSequence": [ "CRESSELIA", "DARKRAI" ],
+    "lunarFeatherRepresentedByPersistentQuestState": true
+  },
+  "catalogQuests": [
+    "GENESIS", "BEASTS", "EON", "WEATHER", "COSMIC", "CREATION",
+    "SEA", "SINNOH_WONDERS", "SWORDS", "FORCES", "TAO",
+    "UNOVA_RELICS", "AURA", "KALOS_RELICS", "AETHER", "TAPUS",
+    "LIGHT", "ALOLA_WONDERS", "MELTAN", "HEROES", "ISLE", "ZARUDE",
+    "CROWN", "TREASURES", "PALDEA_DEPTHS", "KITAKAMI"
+  ],
+  "genesisQuest": {
+    "requiredBadge": "EARTHBADGE",
+    "sequence": [ "MEWTWO", "MEW" ],
+    "nativeRbyMewtwoEncounterUnchanged": true,
+    "mewPlacementUnchanged": true,
+    "mewRequiresMewtwoCaught": true,
+    "mewRequiresResearcherStart": false
+  },
+  "nativeEncounterPolicy": {
+    "rbyUnchanged": [ "ARTICUNO", "ZAPDOS", "MOLTRES", "MEWTWO" ],
+    "gen2Unchanged": [ "RAIKOU", "ENTEI", "SUICUNE", "LUGIA", "HO_OH" ],
+    "goldSilverRoamers": [ "RAIKOU", "ENTEI", "SUICUNE" ],
+    "crystalRoamers": [ "RAIKOU", "ENTEI" ],
+    "crystalStaticSuicune": "TIN_TOWER_1F",
+    "captureStateSources": [ "pokedex.owned", "pokedex.caught" ]
+  },
+  "badgePolicy": {
+    "level45And50Families": "VOLCANOBADGE",
+    "level55And60Families": "EARTHBADGE",
+    "birds": "NONE",
+    "gen2GatedFamilies": "RISING",
+    "crossGenerationBadgeCommand": "knd_has_badge"
+  },
+  "encounterRules": {
+    "advanceResult": "caught",
+    "retryAfterKnockoutLossOrRetreat": true,
+    "hideAfterCompletion": true,
+    "saveFlagsAreModOwned": true,
+    "laterStageRequiresAllEarlierCaptures": true
+  },
+  "pokedex": {
+    "familyMethodLabels": true,
+    "actualEncounterLocationsRetained": true,
+    "methodLabelMaximumCharacters": 18
+  }
+}

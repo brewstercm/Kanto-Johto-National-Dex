@@ -1,0 +1,4127 @@
+{
+  "version": "0.9.11-kanto-only",
+  "scope": "Red/Blue/Yellow encounter overlay; retained unchanged",
+  "kantoMaps": 41,
+  "removedJ2Maps": 114,
+  "kantoSpeciesBefore": 299,
+  "relocatedExpandedOverlaySpecies": 448,
+  "relocatedRemovedNativeSpecies": 27,
+  "relocatedJohtoOnlySpecies": 475,
+  "kantoSpeciesAfter": 774,
+  "johtoOnlySpeciesRemaining": [],
+  "assignments": [
+    {
+      "species": "ABOMASNOW",
+      "map": "ROUTE_10",
+      "terrain": "water",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "ACCELGOR",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "AEGISLASH",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SE"
+      ]
+    },
+    {
+      "species": "AERODACTYL",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "AGGRON",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 35,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "ALCREMIE",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "AMAURA",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "AMBIPOM",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "ANNIHILAPE",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 29,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "ANORITH",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "APPLETUN",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 23,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "APPLIN",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "ARCANINE",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER"
+      ]
+    },
+    {
+      "species": "ARCHEN",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 17,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "ARCTIBAX",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "ARCTOVISH",
+      "map": "ROUTE_19",
+      "terrain": "water",
+      "level": 33,
+      "sourceMaps": [
+        "J2_ROUTE_45"
+      ]
+    },
+    {
+      "species": "ARCTOZOLT",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F"
+      ]
+    },
+    {
+      "species": "ARIADOS",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "AROMATISSE",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "ARROKUDA",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 10,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "AUDINO",
+      "map": "ROUTE_15",
+      "terrain": "grass",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "AURORUS",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "AVALUGG",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F"
+      ]
+    },
+    {
+      "species": "AXEW",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "AZUMARILL",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "BAGON",
+      "map": "VERMILION_CITY",
+      "terrain": "water",
+      "level": 24,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "BALTOY",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "BARBARACLE",
+      "map": "ROUTE_20",
+      "terrain": "water",
+      "level": 37,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "BARBOACH",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "BARRASKEWDA",
+      "map": "ROUTE_13",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "BEARTIC",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "BELDUM",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NW"
+      ]
+    },
+    {
+      "species": "BERGMITE",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "BEWEAR",
+      "map": "ROUTE_13",
+      "terrain": "grass",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "BIBAREL",
+      "map": "CELADON_CITY",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "BIDOOF",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "BINACLE",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "BLACEPHALON",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "BLISSEY",
+      "map": "ROUTE_16",
+      "terrain": "grass",
+      "level": 27,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "BLITZLE",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "BOLDORE",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "BOLTUND",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "BRAMBLEGHAST",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "BRAMBLIN",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 4,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_OUTSIDE"
+      ]
+    },
+    {
+      "species": "BRELOOM",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "BRONZONG",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NE"
+      ]
+    },
+    {
+      "species": "BRONZOR",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "BRUTE_BONNET",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "BRUXISH",
+      "map": "ROUTE_6",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "BUNEARY",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "BUNNELBY",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 6,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "CACNEA",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "CACTURNE",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 24,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "CAPSAKID",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "CARBINK",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "CARKOL",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "CARNIVINE",
+      "map": "ROUTE_18",
+      "terrain": "grass",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "CARRACOSTA",
+      "map": "ROUTE_24",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "CASTFORM",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "CELESTEELA",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE",
+        "J2_ROUTE_46",
+        "J2_WHIRL_ISLAND_B1F",
+        "J2_WHIRL_ISLAND_B2F",
+        "J2_WHIRL_ISLAND_CAVE",
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER",
+        "J2_WHIRL_ISLAND_NE",
+        "J2_WHIRL_ISLAND_NW",
+        "J2_WHIRL_ISLAND_SE",
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "CETITAN",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 35,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F"
+      ]
+    },
+    {
+      "species": "CETODDLE",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "CHARCADET",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_TIN_TOWER_5F"
+      ]
+    },
+    {
+      "species": "CHARJABUG",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "CHERUBI",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "CHINGLING",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "CLAMPERL",
+      "map": "VERMILION_DOCK",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "CLAYDOL",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_CAVE"
+      ]
+    },
+    {
+      "species": "CLEFABLE",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 20,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "CLEFFA",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "CLODSIRE",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NE"
+      ]
+    },
+    {
+      "species": "COALOSSAL",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "COFAGRIGUS",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 19,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "COMFEY",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 20,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "CONKELDURR",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "COPPERAJAH",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER"
+      ]
+    },
+    {
+      "species": "CORSOLA",
+      "map": "ROUTE_22",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "CORVISQUIRE",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "COTTONEE",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "CRABOMINABLE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "CRABRAWLER",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "CRAMORANT",
+      "map": "ROUTE_4",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_OUTSIDE"
+      ]
+    },
+    {
+      "species": "CRANIDOS",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "CRAWDAUNT",
+      "map": "ROUTE_25",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "CROAGUNK",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "CROBAT",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "CRYOGONAL",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "CUBCHOO",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "CUFANT",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "DARMANITAN",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "DEERLING",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 10,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "DEINO",
+      "map": "CERULEAN_CITY",
+      "terrain": "water",
+      "level": 22,
+      "sourceMaps": [
+        "J2_OLIVINE_CITY"
+      ]
+    },
+    {
+      "species": "DELCATTY",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "DELIBIRD",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 10,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "DEWGONG",
+      "map": "ROUTE_9",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_40"
+      ]
+    },
+    {
+      "species": "DEWPIDER",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 5,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "DHELMISE",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 31,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "DIGGERSBY",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "DONPHAN",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B2F"
+      ]
+    },
+    {
+      "species": "DOTTLER",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 10,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "DRACOVISH",
+      "map": "ROUTE_12",
+      "terrain": "water",
+      "level": 32,
+      "sourceMaps": [
+        "J2_LAKE_OF_RAGE"
+      ]
+    },
+    {
+      "species": "DRAGALGE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 19,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "DRAGONAIR",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_CAVE"
+      ]
+    },
+    {
+      "species": "DRAKLOAK",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B1F"
+      ]
+    },
+    {
+      "species": "DRAMPA",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "DRAPION",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NW"
+      ]
+    },
+    {
+      "species": "DREDNAW",
+      "map": "VIRIDIAN_CITY",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "DREEPY",
+      "map": "PALLET_TOWN",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "DRIFBLIM",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 20,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "DUBWOOL",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "DUCKLETT",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "DUOSION",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "DURALUDON",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "DUSKNOIR",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 27,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "DUSKULL",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "DUSTOX",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 17,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "DWEBBLE",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "EELEKTRIK",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "EKANS",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "ELGYEM",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "EMOLGA",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "ESPEON",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "FEEBAS",
+      "map": "VERMILION_DOCK",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_VIOLET_CITY"
+      ]
+    },
+    {
+      "species": "FERROSEED",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "FIDOUGH",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "FLABEBE",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "FLAPPLE",
+      "map": "ROUTE_10",
+      "terrain": "water",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "FLAREON",
+      "map": "ROUTE_13",
+      "terrain": "grass",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "FLETCHLING",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "FLITTLE",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_TIN_TOWER_6F"
+      ]
+    },
+    {
+      "species": "FLOETTE",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "FLUTTER_MANE",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "FLYGON",
+      "map": "CINNABAR_ISLAND",
+      "terrain": "water",
+      "level": 32,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "FOONGUS",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "FRAXURE",
+      "map": "VERMILION_CITY",
+      "terrain": "water",
+      "level": 24,
+      "sourceMaps": [
+        "J2_CHERRYGROVE_CITY"
+      ]
+    },
+    {
+      "species": "FRIGIBAX",
+      "map": "ROUTE_13",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ECRUTEAK_CITY"
+      ]
+    },
+    {
+      "species": "FRILLISH",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "FROSLASS",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "FROSMOTH",
+      "map": "ROUTE_22",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "FURFROU",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "GABITE",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER"
+      ]
+    },
+    {
+      "species": "GALLADE",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 29,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "GALVANTULA",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "GARBODOR",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "GARGANACL",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "GASTRODON",
+      "map": "ROUTE_25",
+      "terrain": "water",
+      "level": 20,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "GHOLDENGO",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SE"
+      ]
+    },
+    {
+      "species": "GIBLE",
+      "map": "ROUTE_4",
+      "terrain": "water",
+      "level": 24,
+      "sourceMaps": [
+        "J2_NEW_BARK_TOWN"
+      ]
+    },
+    {
+      "species": "GIGALITH",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "GIMMIGHOUL",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "GLACEON",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F"
+      ]
+    },
+    {
+      "species": "GLALIE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "GLAMEOW",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 9,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "GLIMMORA",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "GLISCOR",
+      "map": "FUCHSIA_CITY",
+      "terrain": "water",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "GOLISOPOD",
+      "map": "ROUTE_24",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "GOOMY",
+      "map": "CELADON_CITY",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_OLIVINE_PORT"
+      ]
+    },
+    {
+      "species": "GOREBYSS",
+      "map": "ROUTE_6",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "GOTHITELLE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 18,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "GOTHORITA",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "GOUGING_FIRE",
+      "map": "ROUTE_21",
+      "terrain": "water",
+      "level": 38,
+      "sourceMaps": [
+        "J2_DRAGONS_DEN_B1F"
+      ]
+    },
+    {
+      "species": "GOURGEIST",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 18,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "GRAFAIAI",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 24,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "GRANBULL",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 20,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "GREAT_TUSK",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "GRUBBIN",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "GURDURR",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "GUZZLORD",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "HAKAMO_O",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "HAPPINY",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 17,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "HARIYAMA",
+      "map": "ROUTE_15",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "HATENNA",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 4,
+      "sourceMaps": [
+        "J2_SPROUT_TOWER_3F"
+      ]
+    },
+    {
+      "species": "HATTERENE",
+      "map": "ROUTE_16",
+      "terrain": "grass",
+      "level": 26,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "HAUNTER",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 17,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "HAXORUS",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 29,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "HEATMOR",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "HELIOPTILE",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "HERDIER",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "HIPPOPOTAS",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "HIPPOWDON",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 31,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "HITMONCHAN",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "HITMONLEE",
+      "map": "ROUTE_18",
+      "terrain": "grass",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "HONEDGE",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "HOUNDOOM",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B1F"
+      ]
+    },
+    {
+      "species": "HOUNDSTONE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "HUNTAIL",
+      "map": "ROUTE_9",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_OLIVINE_PORT"
+      ]
+    },
+    {
+      "species": "HYDRAPPLE",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 31,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "IGGLYBUFF",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "ILLUMISE",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 34,
+      "sourceMaps": [
+        "J2_ROUTE_45"
+      ]
+    },
+    {
+      "species": "IMPIDIMP",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_TIN_TOWER_2F"
+      ]
+    },
+    {
+      "species": "INKAY",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "IRON_BOULDER",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "IRON_CROWN",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "IRON_HANDS",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 40,
+      "sourceMaps": [
+        "J2_ROUTE_45"
+      ]
+    },
+    {
+      "species": "IRON_JUGULIS",
+      "map": "ROUTE_20",
+      "terrain": "water",
+      "level": 35,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "IRON_LEAVES",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 34,
+      "sourceMaps": [
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "IRON_MOTH",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_CAVE"
+      ]
+    },
+    {
+      "species": "IRON_THORNS",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "IRON_TREADS",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B2F"
+      ]
+    },
+    {
+      "species": "IRON_VALIANT",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ROUTE_45"
+      ]
+    },
+    {
+      "species": "JANGMO_O",
+      "map": "PALLET_TOWN",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "JELLICENT",
+      "map": "CERULEAN_CITY",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "JOLTIK",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "KABUTO",
+      "map": "VIRIDIAN_CITY",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "KABUTOPS",
+      "map": "ROUTE_24",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "KARRABLAST",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 10,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "KARTANA",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE",
+        "J2_WHIRL_ISLAND_SE",
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "KECLEON",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "KILOWATTREL",
+      "map": "ROUTE_4",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_NEW_BARK_TOWN"
+      ]
+    },
+    {
+      "species": "KINGAMBIT",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 34,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NW"
+      ]
+    },
+    {
+      "species": "KINGLER",
+      "map": "CELADON_CITY",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_41"
+      ]
+    },
+    {
+      "species": "KIRLIA",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "KLEAVOR",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "KLEFKI",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 18,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "KLINK",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "KLINKLANG",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "KOMALA",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "KOMMO_O",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 47,
+      "sourceMaps": [
+        "J2_VICTORY_ROAD"
+      ]
+    },
+    {
+      "species": "KRICKETOT",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 6,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "KROKOROK",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "LAIRON",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "LAPRAS",
+      "map": "FUCHSIA_CITY",
+      "terrain": "water",
+      "level": 28,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "LARVESTA",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "LECHONK",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "LEDIAN",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "LIEPARD",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "LILEEP",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "LILLIPUP",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "LINOONE",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 17,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "LITLEO",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "LITWICK",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 4,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F"
+      ]
+    },
+    {
+      "species": "LOMBRE",
+      "map": "VERMILION_DOCK",
+      "terrain": "water",
+      "level": 20,
+      "sourceMaps": [
+        "J2_VERMILION_PORT"
+      ]
+    },
+    {
+      "species": "LUCARIO",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 27,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "LUDICOLO",
+      "map": "ROUTE_22",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "LURANTIS",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "LUXIO",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "LUXRAY",
+      "map": "ROUTE_13",
+      "terrain": "grass",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "MAGBY",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "MAGCARGO",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 35,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "MAGMORTAR",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 28,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "MAGNETON",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "MAGNEZONE",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "MAKUHITA",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "MALAMAR",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 23,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "MAMOSWINE",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 34,
+      "sourceMaps": [
+        "J2_ICE_PATH_1F"
+      ]
+    },
+    {
+      "species": "MANTYKE",
+      "map": "ROUTE_9",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "MARACTUS",
+      "map": "ROUTE_15",
+      "terrain": "grass",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "MAREANIE",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 10,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "MAWILE",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "MEDICHAM",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "MEOWSTIC",
+      "map": "ROUTE_16",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "METAGROSS",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 48,
+      "sourceMaps": [
+        "J2_SILVER_CAVE_ITEM_ROOMS",
+        "J2_SILVER_CAVE_OUTSIDE",
+        "J2_SILVER_CAVE_ROOM_1",
+        "J2_SILVER_CAVE_ROOM_2",
+        "J2_VICTORY_ROAD"
+      ]
+    },
+    {
+      "species": "METANG",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 35,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NW"
+      ]
+    },
+    {
+      "species": "MIENFOO",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "MIGHTYENA",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "MILCERY",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "MILOTIC",
+      "map": "ROUTE_12",
+      "terrain": "water",
+      "level": 31,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "MIME_JR",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "MINCCINO",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "MISDREAVUS",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 34,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B2F"
+      ]
+    },
+    {
+      "species": "MISMAGIUS",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 18,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "MOTHIM",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "MR_RIME",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 34,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "MUDSDALE",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "MUNCHLAX",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "MUNNA",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "NACLI",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "NAGANADEL",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "NICKIT",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 5,
+      "sourceMaps": [
+        "J2_TIN_TOWER_9F"
+      ]
+    },
+    {
+      "species": "NIDOKING",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "NIDOQUEEN",
+      "map": "ROUTE_18",
+      "terrain": "grass",
+      "level": 26,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "NIHILEGO",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F",
+        "J2_WHIRL_ISLAND_B1F",
+        "J2_WHIRL_ISLAND_B2F",
+        "J2_WHIRL_ISLAND_CAVE",
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER",
+        "J2_WHIRL_ISLAND_NE",
+        "J2_WHIRL_ISLAND_NW",
+        "J2_WHIRL_ISLAND_SE",
+        "J2_WHIRL_ISLAND_SW"
+      ]
+    },
+    {
+      "species": "NINCADA",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_RUINS_OF_ALPH_OUTSIDE",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_2F",
+        "J2_TIN_TOWER_3F",
+        "J2_TIN_TOWER_4F",
+        "J2_TIN_TOWER_5F",
+        "J2_TIN_TOWER_6F",
+        "J2_TIN_TOWER_7F",
+        "J2_TIN_TOWER_8F",
+        "J2_TIN_TOWER_9F",
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "NOIBAT",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 4,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_8F"
+      ]
+    },
+    {
+      "species": "NOIVERN",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 26,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "NOSEPASS",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "NUZLEAF",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "NYMBLE",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "OCTILLERY",
+      "map": "ROUTE_25",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "OMANYTE",
+      "map": "VERMILION_CITY",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_41"
+      ]
+    },
+    {
+      "species": "OMASTAR",
+      "map": "ROUTE_6",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "ORANGURU",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "ORICORIO",
+      "map": "VIRIDIAN_CITY",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "OVERQWIL",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "PALOSSAND",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 24,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "PALPITOAD",
+      "map": "PALLET_TOWN",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_40"
+      ]
+    },
+    {
+      "species": "PANCHAM",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "PANGORO",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 19,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "PANSAGE",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "PARASECT",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "PASSIMIAN",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "PATRAT",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "PAWMI",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "PERSIAN",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "PETILIL",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 9,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "PICHU",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "PIDGEOT",
+      "map": "CERULEAN_CITY",
+      "terrain": "water",
+      "level": 20,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "PINCURCHIN",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 33,
+      "sourceMaps": [
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "PINECO",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ROUTE_32",
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "POLITOED",
+      "map": "ROUTE_21",
+      "terrain": "water",
+      "level": 38,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B2F"
+      ]
+    },
+    {
+      "species": "POLIWRATH",
+      "map": "CINNABAR_ISLAND",
+      "terrain": "water",
+      "level": 32,
+      "sourceMaps": [
+        "J2_BLACKTHORN_CITY",
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "POLTCHAGEIST",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "POOCHYENA",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 6,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_RUINS_OF_ALPH_OUTSIDE",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_2F",
+        "J2_TIN_TOWER_3F",
+        "J2_TIN_TOWER_4F",
+        "J2_TIN_TOWER_5F",
+        "J2_TIN_TOWER_6F",
+        "J2_TIN_TOWER_7F",
+        "J2_TIN_TOWER_8F",
+        "J2_TIN_TOWER_9F",
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "PROBOPASS",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "PUMPKABOO",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "PUPITAR",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ICE_PATH_B1F"
+      ]
+    },
+    {
+      "species": "PURRLOIN",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "PURUGLY",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "PYUKUMUKU",
+      "map": "ROUTE_10",
+      "terrain": "water",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "RABSCA",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "RAGING_BOLT",
+      "map": "ROUTE_19",
+      "terrain": "water",
+      "level": 33,
+      "sourceMaps": [
+        "J2_DRAGONS_DEN_B1F"
+      ]
+    },
+    {
+      "species": "RALTS",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "RELICANTH",
+      "map": "VERMILION_DOCK",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B2F"
+      ]
+    },
+    {
+      "species": "RELLOR",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "REUNICLUS",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_OUTSIDE"
+      ]
+    },
+    {
+      "species": "REVAVROOM",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B1F"
+      ]
+    },
+    {
+      "species": "RHYPERIOR",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "RIBOMBEE",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "RIOLU",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "ROARING_MOON",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 38,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "ROLYCOLY",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_SPROUT_TOWER_2F"
+      ]
+    },
+    {
+      "species": "ROOKIDEE",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "ROSELIA",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "RUFFLET",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "SALANDIT",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "SANDILE",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 12,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "SANDYGAST",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "SANDY_SHOCKS",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 40,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B1F"
+      ]
+    },
+    {
+      "species": "SCOLIPEDE",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "SCOVILLAIN",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 20,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "SCRAGGY",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "SCYTHER",
+      "map": "ROUTE_13",
+      "terrain": "grass",
+      "level": 28,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "SEALEO",
+      "map": "ROUTE_13",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "SEISMITOAD",
+      "map": "ROUTE_20",
+      "terrain": "water",
+      "level": 35,
+      "sourceMaps": [
+        "J2_DARK_CAVE_BLACKTHORN_ENTRANCE"
+      ]
+    },
+    {
+      "species": "SEVIPER",
+      "map": "ROUTE_15",
+      "terrain": "grass",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "SHEDINJA",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_RUINS_OF_ALPH_OUTSIDE",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_2F",
+        "J2_TIN_TOWER_3F",
+        "J2_TIN_TOWER_6F",
+        "J2_TIN_TOWER_7F",
+        "J2_TIN_TOWER_8F",
+        "J2_TIN_TOWER_9F",
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "SHELGON",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NE"
+      ]
+    },
+    {
+      "species": "SHELMET",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "SHIELDON",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "SHIINOTIC",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "SHINX",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 5,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "SHUCKLE",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "SIGILYPH",
+      "map": "ROUTE_22",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ECRUTEAK_CITY"
+      ]
+    },
+    {
+      "species": "SIMISAGE",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "SIMISEAR",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 23,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "SINISTCHA",
+      "map": "ROUTE_18",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "SINISTEA",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 9,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "SIZZLIPEDE",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "SKARMORY",
+      "map": "ROUTE_25",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "SKORUPI",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "SKRELP",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_MOUNT_MOON"
+      ]
+    },
+    {
+      "species": "SKUNTANK",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 20,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "SLAKING",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 41,
+      "sourceMaps": [
+        "J2_VICTORY_ROAD"
+      ]
+    },
+    {
+      "species": "SLIGGOO",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 32,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_B2F"
+      ]
+    },
+    {
+      "species": "SLITHER_WING",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "SLOWKING",
+      "map": "ROUTE_13",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_CIANWOOD_CITY"
+      ]
+    },
+    {
+      "species": "SLURPUFF",
+      "map": "ROUTE_16",
+      "terrain": "grass",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "SMOOCHUM",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "SNOM",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_TIN_TOWER_4F"
+      ]
+    },
+    {
+      "species": "SNORLAX",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "SNORUNT",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 8,
+      "sourceMaps": [
+        "J2_DARK_CAVE_VIOLET_ENTRANCE"
+      ]
+    },
+    {
+      "species": "SNOVER",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ILEX_FOREST"
+      ]
+    },
+    {
+      "species": "SPEWPA",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 5,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "SPHEAL",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 10,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "SPIDOPS",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "SPINARAK",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 5,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_RUINS_OF_ALPH_OUTSIDE",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_2F",
+        "J2_TIN_TOWER_3F",
+        "J2_TIN_TOWER_4F",
+        "J2_TIN_TOWER_5F",
+        "J2_TIN_TOWER_6F",
+        "J2_TIN_TOWER_7F",
+        "J2_TIN_TOWER_8F",
+        "J2_TIN_TOWER_9F",
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "SPOINK",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 8,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "SPRITZEE",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "STAKATAKA",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "STARAPTOR",
+      "map": "VERMILION_CITY",
+      "terrain": "water",
+      "level": 24,
+      "sourceMaps": [
+        "J2_ROUTE_26"
+      ]
+    },
+    {
+      "species": "STARMIE",
+      "map": "FUCHSIA_CITY",
+      "terrain": "water",
+      "level": 29,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_2F_INSIDE"
+      ]
+    },
+    {
+      "species": "STARYU",
+      "map": "CELADON_CITY",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "STEELIX",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 29,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "STEENEE",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 10,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "STOUTLAND",
+      "map": "ROUTE_18",
+      "terrain": "grass",
+      "level": 29,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "STUNFISK",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_1F_INSIDE"
+      ]
+    },
+    {
+      "species": "SUDOWOODO",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "SUNFLORA",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "SURSKIT",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 4,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "SWABLU",
+      "map": "ROUTE_2",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_31"
+      ]
+    },
+    {
+      "species": "SWADLOON",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B1F"
+      ]
+    },
+    {
+      "species": "SWALOT",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "SWANNA",
+      "map": "ROUTE_24",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_VERMILION_PORT"
+      ]
+    },
+    {
+      "species": "SWIRLIX",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "SWOOBAT",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "TAILLOW",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 7,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "TALONFLAME",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 25,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "TATSUGIRI",
+      "map": "ROUTE_6",
+      "terrain": "water",
+      "level": 20,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "TIMBURR",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_30"
+      ]
+    },
+    {
+      "species": "TINKATUFF",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "TIRTOUGA",
+      "map": "ROUTE_4",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_OUTSIDE"
+      ]
+    },
+    {
+      "species": "TOEDSCOOL",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "TOGEDEMARU",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 35,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_CAVE"
+      ]
+    },
+    {
+      "species": "TOGEPI",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "TOGETIC",
+      "map": "PALLET_TOWN",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_CIANWOOD_CITY"
+      ]
+    },
+    {
+      "species": "TORKOAL",
+      "map": "ROUTE_9",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_42"
+      ]
+    },
+    {
+      "species": "TOUCANNON",
+      "map": "ROUTE_9",
+      "terrain": "water",
+      "level": 23,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "TOXAPEX",
+      "map": "ROUTE_10",
+      "terrain": "water",
+      "level": 22,
+      "sourceMaps": [
+        "J2_CHERRYGROVE_CITY"
+      ]
+    },
+    {
+      "species": "TOXEL",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 4,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER"
+      ]
+    },
+    {
+      "species": "TOXICROAK",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 23,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "TOXTRICITY",
+      "map": "ROUTE_16",
+      "terrain": "grass",
+      "level": 31,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "TRANQUILL",
+      "map": "ROUTE_15",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "TRAPINCH",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 11,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "TURTONATOR",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 23,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "TYRANTRUM",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_ICE_PATH_B3F"
+      ]
+    },
+    {
+      "species": "TYRUNT",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 16,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "UMBREON",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 29,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "UNFEZANT",
+      "map": "CERULEAN_CITY",
+      "terrain": "water",
+      "level": 19,
+      "sourceMaps": [
+        "J2_OLIVINE_CITY"
+      ]
+    },
+    {
+      "species": "URSALUNA",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_NE"
+      ]
+    },
+    {
+      "species": "VANILLISH",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "VANILLUXE",
+      "map": "VICTORY_ROAD_3F",
+      "terrain": "indoor",
+      "level": 34,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_MAHOGANY_SIDE"
+      ]
+    },
+    {
+      "species": "VELUZA",
+      "map": "VERMILION_DOCK",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_34"
+      ]
+    },
+    {
+      "species": "VENIPEDE",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 6,
+      "sourceMaps": [
+        "J2_RUINS_OF_ALPH_INNER_CHAMBER",
+        "J2_SPROUT_TOWER_2F",
+        "J2_SPROUT_TOWER_3F",
+        "J2_TIN_TOWER_4F",
+        "J2_TIN_TOWER_7F"
+      ]
+    },
+    {
+      "species": "VENOMOTH",
+      "map": "ROUTE_13",
+      "terrain": "grass",
+      "level": 19,
+      "sourceMaps": [
+        "J2_ROUTE_39"
+      ]
+    },
+    {
+      "species": "VESPIQUEN",
+      "map": "ROUTE_22",
+      "terrain": "water",
+      "level": 18,
+      "sourceMaps": [
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "VIBRAVA",
+      "map": "ROUTE_5",
+      "terrain": "grass",
+      "level": 15,
+      "sourceMaps": [
+        "J2_ROUTE_36"
+      ]
+    },
+    {
+      "species": "VICTREEBEL",
+      "map": "DIGLETTS_CAVE",
+      "terrain": "indoor",
+      "level": 21,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_1F"
+      ]
+    },
+    {
+      "species": "VIGOROTH",
+      "map": "ROUTE_14",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_45"
+      ]
+    },
+    {
+      "species": "VILEPLUME",
+      "map": "ROCK_TUNNEL_1F",
+      "terrain": "indoor",
+      "level": 24,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "VIVILLON",
+      "map": "ROUTE_6",
+      "terrain": "grass",
+      "level": 14,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "VOLBEAT",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 36,
+      "sourceMaps": [
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "VULPIX",
+      "map": "ROUTE_4",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "WAILMER",
+      "map": "VIRIDIAN_CITY",
+      "terrain": "water",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_35"
+      ]
+    },
+    {
+      "species": "WAILORD",
+      "map": "ROUTE_21",
+      "terrain": "water",
+      "level": 38,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_LUGIA_CHAMBER"
+      ]
+    },
+    {
+      "species": "WALREIN",
+      "map": "CINNABAR_ISLAND",
+      "terrain": "water",
+      "level": 30,
+      "sourceMaps": [
+        "J2_ROUTE_43"
+      ]
+    },
+    {
+      "species": "WATCHOG",
+      "map": "ROUTE_24",
+      "terrain": "grass",
+      "level": 13,
+      "sourceMaps": [
+        "J2_SLOWPOKE_WELL_B2F"
+      ]
+    },
+    {
+      "species": "WATTREL",
+      "map": "ROUTE_3",
+      "terrain": "grass",
+      "level": 11,
+      "sourceMaps": [
+        "J2_ROUTE_32"
+      ]
+    },
+    {
+      "species": "WEAVILE",
+      "map": "VICTORY_ROAD_1F",
+      "terrain": "indoor",
+      "level": 37,
+      "sourceMaps": [
+        "J2_ICE_PATH_B2F_BLACKTHORN_SIDE"
+      ]
+    },
+    {
+      "species": "WEEZING",
+      "map": "ROCK_TUNNEL_B1F",
+      "terrain": "indoor",
+      "level": 20,
+      "sourceMaps": [
+        "J2_BURNED_TOWER_B1F"
+      ]
+    },
+    {
+      "species": "WHIRLIPEDE",
+      "map": "ROUTE_7",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_ROUTE_37"
+      ]
+    },
+    {
+      "species": "WHISCASH",
+      "map": "ROUTE_13",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_UNION_CAVE_B1F"
+      ]
+    },
+    {
+      "species": "WIGLETT",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_TOHJO_FALLS"
+      ]
+    },
+    {
+      "species": "WIMPOD",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_29"
+      ]
+    },
+    {
+      "species": "WISHIWASHI",
+      "map": "MT_MOON_B1F",
+      "terrain": "indoor",
+      "level": 7,
+      "sourceMaps": [
+        "J2_TIN_TOWER_5F"
+      ]
+    },
+    {
+      "species": "WOOBAT",
+      "map": "ROUTE_25",
+      "terrain": "grass",
+      "level": 12,
+      "sourceMaps": [
+        "J2_ROUTE_33"
+      ]
+    },
+    {
+      "species": "WORMADAM",
+      "map": "ROUTE_8",
+      "terrain": "grass",
+      "level": 18,
+      "sourceMaps": [
+        "J2_NATIONAL_PARK"
+      ]
+    },
+    {
+      "species": "WUGTRIO",
+      "map": "ROUTE_10",
+      "terrain": "water",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "WURMPLE",
+      "map": "ROUTE_1",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_27"
+      ]
+    },
+    {
+      "species": "WYNAUT",
+      "map": "MT_MOON_1F",
+      "terrain": "indoor",
+      "level": 3,
+      "sourceMaps": [
+        "J2_TIN_TOWER_3F"
+      ]
+    },
+    {
+      "species": "XATU",
+      "map": "ROUTE_25",
+      "terrain": "water",
+      "level": 20,
+      "sourceMaps": [
+        "J2_VIOLET_CITY"
+      ]
+    },
+    {
+      "species": "XURKITREE",
+      "map": "ROUTE_21",
+      "terrain": "grass",
+      "level": 39,
+      "sourceMaps": [
+        "J2_ROUTE_45",
+        "J2_ROUTE_46"
+      ]
+    },
+    {
+      "species": "YANMEGA",
+      "map": "VERMILION_CITY",
+      "terrain": "water",
+      "level": 25,
+      "sourceMaps": [
+        "J2_MOUNT_MORTAR_B1F"
+      ]
+    },
+    {
+      "species": "YUNGOOS",
+      "map": "ROUTE_22",
+      "terrain": "grass",
+      "level": 3,
+      "sourceMaps": [
+        "J2_ROUTE_28"
+      ]
+    },
+    {
+      "species": "ZANGOOSE",
+      "map": "ROUTE_10",
+      "terrain": "grass",
+      "level": 22,
+      "sourceMaps": [
+        "J2_ROUTE_10_NORTH"
+      ]
+    },
+    {
+      "species": "ZEBSTRIKA",
+      "map": "ROUTE_11",
+      "terrain": "grass",
+      "level": 21,
+      "sourceMaps": [
+        "J2_ROUTE_38"
+      ]
+    },
+    {
+      "species": "ZOROARK",
+      "map": "ROUTE_17",
+      "terrain": "grass",
+      "level": 32,
+      "sourceMaps": [
+        "J2_ROUTE_44"
+      ]
+    },
+    {
+      "species": "ZORUA",
+      "map": "MT_MOON_B2F",
+      "terrain": "indoor",
+      "level": 10,
+      "sourceMaps": [
+        "J2_UNION_CAVE_1F"
+      ]
+    },
+    {
+      "species": "ZWEILOUS",
+      "map": "VICTORY_ROAD_2F",
+      "terrain": "indoor",
+      "level": 33,
+      "sourceMaps": [
+        "J2_WHIRL_ISLAND_SE"
+      ]
+    }
+  ]
+}

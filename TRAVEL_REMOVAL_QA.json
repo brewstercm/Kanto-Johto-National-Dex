@@ -1,0 +1,17 @@
+{
+  "feature": "imported Johto removal",
+  "removed": [
+    "KANTO/JOHTO START-menu row",
+    "Kanto position persistence",
+    "New Bark and Pallet cross-region menu warps",
+    "all J2 map, tileset, event, trainer and field-move registrations",
+    "all J2 encounter rows and map assets"
+  ],
+  "retained": [
+    "27 starter gifts relocated to native Kanto",
+    "added legendary and mythical statics relocated to native Kanto",
+    "475 former Johto-only wild species relocated to Kanto",
+    "Kanto-only Pokedex AREA data",
+    "Gold/Silver/Crystal cartridge-native world and encounters"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "kanto_johto_dex_gen1_9",
+  "name": "Kanto National Dex",
+  "version": "0.9.12",
+  "github": "brewstercm/Kanto-Johto-National-Dex",
+  "entry": "main.lua",
+  "api": 2,
+  "games": [
+    "gen1",
+    "gen2"
+  ],
+  "profile": "overhaul",
+  "category": "CONTENT",
+  "priority": 95,
+  "description": "National Dex content for Red, Blue, Yellow, Gold, Silver, and Crystal. R/B/Y retain the established Kanto tables; G/S/C spread progression-balanced Gen 1-9 encounters across native Johto and postgame Kanto. Includes complete normal/shiny sprite sets, starter gifts, legendary quests/statics, the Regigigas Chamber, a 1,025-species Pokédex location catalog, evolutions, and integrated QoL/CHEATS.",
+  "permissions": [
+    "engine_internals"
+  ],
+  "conflicts": [
+    "kanto_johto_dex_gen1_1",
+    "kanto_johto_dex_gen1_2",
+    "kanto_johto_dex_gen1_3",
+    "kanto_johto_dex_gen1_4",
+    "kanto_johto_dex_gen1_5",
+    "kanto_johto_dex_gen1_6",
+    "kanto_johto_dex_gen1_7",
+    "kanto_johto_dex_gen1_8",
+    "kanto_johto_dex_gen1_9_safari",
+    "kanto_johto_region_travel",
+    "national_dex",
+    "qol_toggles",
+    "quality_of_life",
+    "swuff_qol",
+    "GameShark"
+  ],
+  "optional_dependencies": []
+}

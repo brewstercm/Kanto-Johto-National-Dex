@@ -1,0 +1,9 @@
+{
+  "feature": "options cursor rebuild compatibility",
+  "cases": [
+    { "from": "zoom", "input": "down", "expected": "voidFill" },
+    { "from": "voidFill", "input": "up", "expected": "zoom" },
+    { "from": "cancel", "input": "down", "expected": "first row" },
+    { "from": "first row", "input": "up", "expected": "cancel" }
+  ]
+}

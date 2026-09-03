@@ -1,0 +1,22 @@
+{
+  "variant_generation": 9,
+  "max_dex": 1025,
+  "trainer_species_refs": 198,
+  "bad_trainer_refs": [],
+  "encounter_maps": 73,
+  "encounter_species_unique": 308,
+  "bad_encounter_refs": [],
+  "art_front_count": 1025,
+  "art_back_count": 1025,
+  "filtered_national_max_canonical_dex": 1025,
+  "forms_in_filtered_payload": false,
+  "gold_world_registration_guard": "isGen1() gate preserved",
+  "save_editor_headless_load": {
+    "game": "blue",
+    "mod_state": "loaded",
+    "species": 1025,
+    "loader_errors": 0,
+    "generation_fallback": "native VICTORY_ROAD_2F map marker"
+  },
+  "version": "0.2.4"
+}

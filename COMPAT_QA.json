@@ -1,0 +1,15 @@
+{
+  "version": "0.3.5",
+  "variant": "Gen1-9",
+  "gameshark_no_battles_preempts_custom_encounter_roll": true,
+  "gameshark_export": "GameShark.exports.list(effect=no_encounters)",
+  "imported_pokecenter_1f_maps_detected": 22,
+  "nurse_objects_detected": 22,
+  "imported_standalone_marts_detected": 13,
+  "clerk_objects_detected": 28,
+  "pc_hotspot_cell": [
+    9,
+    1
+  ],
+  "gen2_native_services_untouched": true
+}

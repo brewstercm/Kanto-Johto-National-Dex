@@ -1,0 +1,69 @@
+{
+  "version": "0.9.11-gen2-balanced",
+  "balancePolicy": "earliest-access area targets, evolution floors, BST tiers; native Gen I additions retain their old median floor",
+  "minimumLevelViolations": 0,
+  "runtimeSelection": {
+    "gen1": "extra_encounters.lua",
+    "gen2": "extra_encounters_gen2.lua"
+  },
+  "gen1SourceSha256": "65A69BC65D757D34CBD9EC142DD4878859B67795C35F9DB64CE1B4033EB10171",
+  "uniqueSpecies": 774,
+  "duplicateSpecies": 0,
+  "mapCount": 95,
+  "mapsByRegion": {
+    "johto": 61,
+    "kanto": 34
+  },
+  "speciesPlacementsByRegion": {
+    "johto": 496,
+    "kanto": 278
+  },
+  "speciesPlacementsByGenerationAndRegion": {
+    "1": {
+      "johto": 43,
+      "kanto": 30
+    },
+    "2": {
+      "johto": 47,
+      "kanto": 26
+    },
+    "3": {
+      "johto": 87,
+      "kanto": 29
+    },
+    "4": {
+      "johto": 57,
+      "kanto": 27
+    },
+    "5": {
+      "johto": 94,
+      "kanto": 40
+    },
+    "6": {
+      "johto": 35,
+      "kanto": 22
+    },
+    "7": {
+      "johto": 39,
+      "kanto": 24
+    },
+    "8": {
+      "johto": 43,
+      "kanto": 32
+    },
+    "9": {
+      "johto": 51,
+      "kanto": 48
+    }
+  },
+  "habitats": {
+    "grass": 433,
+    "indoor": 237,
+    "water": 104
+  },
+  "generationWeighting": "equal among generations represented on the current map/terrain",
+  "speciesWeighting": "equal among unique species in the selected generation bucket",
+  "ruinsOfAlph": "cartridge-native only",
+  "nativeEncounterRateRetained": true,
+  "nativeSpeciesMergedAtRuntime": true
+}

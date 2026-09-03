@@ -1,0 +1,11 @@
+{
+  "feature": "same-active-mon cancels free SHIFT switch",
+  "version": "0.8.4",
+  "expected": [
+    "After answering YES to the trainer SHIFT prompt, selecting the currently active conscious Pokemon cancels the switch like B.",
+    "No 'already out' message is produced by this path.",
+    "Voluntary mid-turn PKMN -> SWITCH remains vanilla.",
+    "Forced replacement after a faint remains vanilla."
+  ],
+  "implementation": "single PartyMenu.update wrapper; no battle switch hooks duplicated"
+}

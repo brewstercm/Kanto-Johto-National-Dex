@@ -1,0 +1,33 @@
+{
+  "version": "0.9.11-generation-weighted",
+  "datasetsByGameGeneration": {
+    "gen1": "existing 41-map Kanto overlay",
+    "gen2": "103-map native Johto/postgame-Kanto overlay"
+  },
+  "combinedEncounterPercent": 100,
+  "generations": 9,
+  "percentagePointsPerGenerationWhenAllNineAreRepresented": 11.1111111111,
+  "nativeAndAddedSpeciesCombined": true,
+  "speciesWeightingWithinGeneration": "uniform by unique species",
+  "missingGenerationBehavior": "divide evenly among represented generations",
+  "duplicateSpeciesRows": "deduplicated before selection",
+  "route1": {
+    "scope": "Red/Blue/Yellow",
+    "representedGenerations": 9,
+    "expandedSpecies": 25,
+    "generation1Species": ["PIDGEY", "RATTATA", "KAKUNA", "WEEDLE"],
+    "generation1SpeciesPercentEach": 2.7777777778,
+    "generation9Species": ["NYMBLE"],
+    "generation9SpeciesPercentEach": 11.1111111111
+  },
+  "route2AddedBuckets": {
+    "generation1": ["KAKUNA", "WEEDLE"],
+    "generation2": ["PICHU"],
+    "generation3": ["CASCOON", "LOTAD", "SKITTY", "SWABLU", "ZIGZAGOON"],
+    "generation4": ["KRICKETOT", "RIOLU", "SKORUPI", "SNOVER"],
+    "generation5": ["BLITZLE", "COTTONEE", "MUNNA"],
+    "generation7": ["BOUNSWEET", "GRUBBIN", "PIKIPEK"],
+    "generation8": ["BLIPBUG", "GOSSIFLEUR", "MILCERY", "SKWOVET", "WOOLOO"],
+    "generation9": ["CAPSAKID"]
+  }
+}
