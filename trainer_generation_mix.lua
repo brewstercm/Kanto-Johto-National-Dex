@@ -51,7 +51,7 @@ function M.buildPool(mod,dexArt,stageData,specials)
         and type(record.types)=="table" and type(record.types[1])=="string" then
       local evolution=stageData and stageData[id]
       pool[generation][#pool[generation]+1]={
-        id=id, primaryType=record.types[1],
+        id=id, primaryType=record.types[1], types=record.types,
         stage=tonumber(evolution and evolution.stage) or 1,
       }
     end
@@ -74,7 +74,19 @@ local function matching(rows,originalId,primaryType,stage,wantType,wantStage)
   return out
 end
 
-function M.choose(rows,originalId,primaryType,stage,rng)
+function M.choose(rows,originalId,primaryType,stage,rng,gymType)
+  if gymType then
+    local themed={}
+    for _,candidate in ipairs(rows or {}) do
+      local fits=candidate.primaryType==gymType
+      for _,kind in ipairs(candidate.types or {}) do
+        if kind==gymType then fits=true end
+      end
+      if fits then themed[#themed+1]=candidate end
+    end
+    if #themed==0 then return originalId end
+    rows=themed
+  end
   local priorities={{true,true},{true,false},{false,true},{false,false}}
   for _,priority in ipairs(priorities) do
     local choices=matching(rows,originalId,primaryType,stage,
@@ -92,7 +104,7 @@ local function copySlot(slot)
   return out
 end
 
-function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2)
+function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2,gymType)
   local mixed,replaced,rolls={},0,{}
   for index,slot in ipairs(party or {}) do
     local out=copySlot(slot)
@@ -110,7 +122,8 @@ function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2)
       if generation~=keepGeneration then
         local evolution=stageData and stageData[original]
         local stage=tonumber(evolution and evolution.stage) or 1
-        out.species=M.choose(pool[generation],original,record.types[1],stage,rng)
+        local theme=gymType=="ORIGINAL" and record.types[1] or gymType
+        out.species=M.choose(pool[generation],original,record.types[1],stage,rng,theme)
         if out.species~=original then replaced=replaced+1 end
       end
     end
@@ -119,9 +132,56 @@ function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2)
   return mixed,replaced,rolls
 end
 
+local GYM_MAPS={
+  PEWTER_GYM="ROCK",CERULEAN_GYM="WATER",VERMILION_GYM="ELECTRIC",
+  CELADON_GYM="GRASS",FUCHSIA_GYM="POISON",SAFFRON_GYM="PSYCHIC",
+  CINNABAR_GYM="FIRE",SEAFOAM_GYM="FIRE",
+  VIOLET_GYM="FLYING",AZALEA_GYM="BUG",GOLDENROD_GYM="NORMAL",
+  ECRUTEAK_GYM="GHOST",CIANWOOD_GYM="FIGHTING",OLIVINE_GYM="STEEL",
+  MAHOGANY_GYM="ICE",BLACKTHORN_GYM_1F="DRAGON",BLACKTHORN_GYM_2F="DRAGON",
+  FIGHTING_DOJO="FIGHTING",SAFFRON_FIGHTING_DOJO="FIGHTING",
+}
+local LEADERS={BROCK="ROCK",MISTY="WATER",LT_SURGE="ELECTRIC",
+  LTSURGE="ELECTRIC",ERIKA="GRASS",SABRINA="PSYCHIC",BLAINE="FIRE",
+  FALKNER="FLYING",BUGSY="BUG",WHITNEY="NORMAL",MORTY="GHOST",
+  CHUCK="FIGHTING",JASMINE="STEEL",PRYCE="ICE",CLAIR="DRAGON",JANINE="POISON",
+  BLUE="ORIGINAL"}
+
+function M.gymThemes(mod)
+  local byParty,byIndex={},{}
+  for _,id in ipairs(trainerIds(mod.content.trainers)) do
+    local record=mod.content.trainers:get(id)
+    if record and record.index then byIndex[record.index]=id end
+  end
+  local data=mod.game and mod.game.data or {}
+  local maps={}
+  for id,theme in pairs(GYM_MAPS) do maps[id]=theme end
+  maps.VIRIDIAN_GYM="VIRIDIAN"
+  for mapId,theme in pairs(maps) do
+    local def
+    if mod.content.maps then
+      local ok,value=pcall(function() return mod.content.maps:get(mapId) end)
+      if ok then def=value end
+    end
+    def=def or (data.maps and data.maps[mapId]) or (data.gen2Maps and data.gen2Maps[mapId])
+    for _,object in ipairs((def and def.objects) or {}) do
+      local trainer=object.trainer
+      local gen2=type(trainer)=="table"
+      local class=gen2 and (byIndex[trainer.class] or trainer.class) or object.trainerClass
+      local member=gen2 and trainer.member or object.trainerParty
+      if class and member then
+        local resolved=theme=="VIRIDIAN" and (gen2 and "ORIGINAL" or "GROUND") or theme
+        byParty[tostring(class).."#"..tostring(member)]=resolved
+      end
+    end
+  end
+  return byParty
+end
+
 function M.install(mod,dexArt,stageData,specials,rng)
   rng=rng or math.random
   local pool=M.buildPool(mod,dexArt,stageData,specials)
+  local gymThemes=M.gymThemes(mod)
   local poolCounts={}
   for generation=1,9 do poolCounts[generation]=#pool[generation] end
   local trainers,parties,slots,replaced,failed=0,0,0,0,0
@@ -133,7 +193,8 @@ function M.install(mod,dexArt,stageData,specials,rng)
       local mixed,changed={},0
       for memberIndex,member in ipairs(record.trainers) do
         local out=copySlot(member)
-        local result,count=M.mixParty(mod,member.party,pool,stageData,rng,dexArt,true)
+        local theme=gymThemes[id.."#"..memberIndex] or LEADERS[id:gsub("^OPP_","")]
+        local result,count=M.mixParty(mod,member.party,pool,stageData,rng,dexArt,true,theme)
         out.party=result
         mixed[memberIndex]=out
         changed=changed+count
@@ -155,7 +216,9 @@ function M.install(mod,dexArt,stageData,specials,rng)
       local mixed={}
       local changed=0
       for partyIndex,party in ipairs(record.parties) do
-        local result,count=M.mixParty(mod,party,pool,stageData,rng)
+        local theme=gymThemes[id.."#"..partyIndex] or LEADERS[id:gsub("^OPP_","")]
+        if id=="OPP_KOGA" then theme="POISON" end
+        local result,count=M.mixParty(mod,party,pool,stageData,rng,nil,false,theme)
         mixed[partyIndex]=result
         changed=changed+count
         parties=parties+1

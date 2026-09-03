@@ -67,4 +67,32 @@ assert(replaced[1].species=="PIDGEY" and replacedCount==1)
 local native,nativeCount=mix.mixParty(mod,{{species="PIDGEY",level=5}},pool,
   stages,rollGeneration(1),dex,true)
 assert(native[1].species=="PIDGEY" and nativeCount==0)
-print("Trainer mix tests passed: Gen I and G/S/C schemas, matching, exclusions, metadata, Gen I keep roll")
+assert(mix.choose(pool[2],"PIDGEY","NORMAL",1,first,"FLYING")=="HOOTHOOT")
+assert(mix.choose(pool[2],"PIDGEY","NORMAL",1,first,"DRAGON")=="PIDGEY")
+-- Theme is mandatory even when only an evolution-stage mismatch is available.
+assert(mix.choose({{id="BIRD",primaryType="NORMAL",types={"NORMAL","FLYING"},stage=2},
+  {id="MAMMAL",primaryType="NORMAL",types={"NORMAL"},stage=1}},
+  "PIDGEY","NORMAL",1,first,"FLYING")=="BIRD")
+local classes={
+  BIRD_KEEPER={index=24,trainers={member,member}},
+  FALKNER={index=1,trainers={member}},
+  OPP_JR_TRAINER_M={parties={{slot},{slot}}},
+}
+local patches={}
+local gymMod={content={pokemon=mod.content.pokemon,
+  trainers={each=function() return {"BIRD_KEEPER","FALKNER","OPP_JR_TRAINER_M"} end,
+    get=function(_,id) return classes[id] end,
+    patch=function(_,id,value) patches[id]=value end},
+  maps={get=function(_,id)
+    if id=="VIOLET_GYM" then return {objects={{trainer={class=24,member=1}}}} end
+    if id=="PEWTER_GYM" then return {objects={{trainerClass="OPP_JR_TRAINER_M",trainerParty=1}}} end
+  end},
+},log={info=function() end}}
+mix.install(gymMod,dex,stages,specials,function(lo,hi) return hi==9 and 2 or hi end)
+assert(patches.BIRD_KEEPER.trainers[1].party[1].species=="HOOTHOOT")
+assert(patches.BIRD_KEEPER.trainers[2].party[1].species=="SENTRET")
+assert(patches.FALKNER.trainers[1].party[1].species=="HOOTHOOT")
+-- No Rock choice exists in this fixture: keep the gym member, not the whole class.
+assert(patches.OPP_JR_TRAINER_M.parties[1][1].species=="PIDGEY")
+assert(patches.OPP_JR_TRAINER_M.parties[2][1].species=="SENTRET")
+print("Trainer mix tests passed: generation rules, gym members/leaders, secondary types, no off-theme fallback")
