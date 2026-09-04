@@ -19,6 +19,8 @@ jobs:
           sudo apt-get install -y lua5.4
           lua5.4 tools/test_native_encounter_pool.lua
           lua5.4 tools/test_trainer_generation_mix.lua
+          lua5.4 tools/test_party_icons.lua
+          python3 -B tools/validate_party_icons.py
           python3 -B tools/validate_gen2_balance.py
           python3 -B tools/validate_gen2_quests.py
       - name: Build installable ZIP

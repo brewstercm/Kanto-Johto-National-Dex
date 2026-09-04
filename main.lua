@@ -96,6 +96,8 @@ mod.exports.dexCutoff = variant.maxDex
 local nationalSetup = ownModule("national_setup.lua")
 if type(nationalSetup) == "function" then nationalSetup(mod) end
 
+ownModule("party_icons.lua")(mod, dexArt, variant.maxDex, isGen1())
+
 -- Apply the supplied PixelArt pack to every species this variant actually carries.
 for id, art in pairs(dexArt) do
   if art.dex <= variant.maxDex and mod.content.pokemon:get(id) then

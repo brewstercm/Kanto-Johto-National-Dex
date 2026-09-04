@@ -1,7 +1,7 @@
 {
   "id": "kanto_johto_dex_gen1_9",
   "name": "Kanto National Dex",
-  "version": "0.9.16",
+  "version": "0.9.17",
   "github": "brewstercm/Kanto-Johto-National-Dex",
   "entry": "main.lua",
   "api": 2,

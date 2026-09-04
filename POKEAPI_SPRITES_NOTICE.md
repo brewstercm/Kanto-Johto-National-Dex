@@ -1,5 +1,13 @@
 # PokeAPI sprite notice
 
+The party icons in `assets/party_icons` use the same pinned PokeAPI repository's
+Generation VIII icon collection for species 1–898. Species 899–1025 use miniature
+versions of this mod's existing front artwork, because that icon collection
+does not cover them. All are fitted to 16x16 native party slots with a second
+one-pixel bob frame. `tools/build_party_icons.py` reproduces the assets and
+`PARTY_ICON_QA.json` records their sources and checksums. These are regular-color
+species icons; shiny party members use the same icons.
+
 The shiny front and back sprite sheets in `assets/anim/shiny` were generated
 from the [PokeAPI sprites repository](https://github.com/PokeAPI/sprites),
 pinned to commit `b2486a428a7548c874ad3900951d5334a40d21a5`.
