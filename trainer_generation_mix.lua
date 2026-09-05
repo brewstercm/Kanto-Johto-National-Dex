@@ -37,7 +37,29 @@ local function excludedSpecies(specials)
   for _,row in ipairs((specials and specials.staticSpecies) or {}) do
     if type(row.species)=="string" then excluded[row.species]=true end
   end
+  for _,row in ipairs((specials and specials.giftSpecies) or {}) do
+    if type(row.species)=="string" then excluded[row.species]=true end
+  end
   return excluded
+end
+
+local function bst(record)
+  local base=type(record.baseStats)=="table" and record.baseStats or {}
+  local special=tonumber(base.special) or 0
+  local spa=tonumber(record.spAttack) or tonumber(base.specialAttack) or special
+  local spd=tonumber(record.spDefense) or tonumber(base.specialDefense) or special
+  return (tonumber(base.hp) or 0)+(tonumber(base.attack) or 0)
+    +(tonumber(base.defense) or 0)+(tonumber(base.speed) or 0)+spa+spd
+end
+
+local function evolutionFloor(evolution)
+  local parent=evolution and evolution.evolvesFrom
+  local best
+  for _,method in ipairs((parent and parent.methods) or {}) do
+    local level=tonumber(method.level)
+    if level and (not best or level<best) then best=level end
+  end
+  return best or (parent and 20 or 1)
 end
 
 function M.buildPool(mod,dexArt,stageData,specials)
@@ -53,6 +75,7 @@ function M.buildPool(mod,dexArt,stageData,specials)
       pool[generation][#pool[generation]+1]={
         id=id, primaryType=record.types[1], types=record.types,
         stage=tonumber(evolution and evolution.stage) or 1,
+        bst=bst(record),minimumLevel=evolutionFloor(evolution),
       }
     end
   end
@@ -62,19 +85,22 @@ function M.buildPool(mod,dexArt,stageData,specials)
   return pool
 end
 
-local function matching(rows,originalId,primaryType,stage,wantType,wantStage)
+local function matching(rows,originalId,primaryType,stage,wantType,wantStage,
+    level,powerCap)
   local out={}
   for _,candidate in ipairs(rows or {}) do
     if candidate.id~=originalId
         and (not wantType or candidate.primaryType==primaryType)
-        and (not wantStage or candidate.stage==stage) then
+        and (not wantStage or candidate.stage==stage)
+        and (not level or (candidate.minimumLevel or 1)<=level)
+        and (not powerCap or (candidate.bst or 0)<=powerCap) then
       out[#out+1]=candidate
     end
   end
   return out
 end
 
-function M.choose(rows,originalId,primaryType,stage,rng,gymType)
+function M.choose(rows,originalId,primaryType,stage,rng,gymType,level,originalBst)
   if gymType then
     local themed={}
     for _,candidate in ipairs(rows or {}) do
@@ -88,14 +114,17 @@ function M.choose(rows,originalId,primaryType,stage,rng,gymType)
     rows=themed
   end
   local priorities={{true,true},{true,false},{false,true},{false,false}}
+  local levelCap=level and (level<=10 and 350 or level<=15 and 400
+    or level<=20 and 450 or level<=30 and 500 or 600) or nil
+  local powerCap=levelCap and math.max(levelCap,tonumber(originalBst) or 0) or nil
   for _,priority in ipairs(priorities) do
     local choices=matching(rows,originalId,primaryType,stage,
-      priority[1],priority[2])
+      priority[1],priority[2],level,powerCap)
     if #choices>0 then return choices[rng(1,#choices)].id end
   end
   -- A one-species generation/type/stage bucket may contain only the original.
   -- Keeping it is safer than manufacturing an invalid species reference.
-  return rows and rows[1] and rows[1].id or originalId
+  return originalId
 end
 
 local function copySlot(slot)
@@ -123,7 +152,8 @@ function M.mixParty(mod,party,pool,stageData,rng,dexArt,gen2,gymType)
         local evolution=stageData and stageData[original]
         local stage=tonumber(evolution and evolution.stage) or 1
         local theme=gymType=="ORIGINAL" and record.types[1] or gymType
-        out.species=M.choose(pool[generation],original,record.types[1],stage,rng,theme)
+        out.species=M.choose(pool[generation],original,record.types[1],stage,rng,
+          theme,tonumber(slot.level),bst(record))
         if out.species~=original then replaced=replaced+1 end
       end
     end

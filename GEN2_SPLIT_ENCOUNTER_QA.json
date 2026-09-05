@@ -7,7 +7,7 @@
     "gen2": "extra_encounters_gen2.lua"
   },
   "gen1SourceSha256": "65A69BC65D757D34CBD9EC142DD4878859B67795C35F9DB64CE1B4033EB10171",
-  "uniqueSpecies": 774,
+  "uniqueSpecies": 773,
   "duplicateSpecies": 0,
   "mapCount": 95,
   "mapsByRegion": {
@@ -15,7 +15,7 @@
     "kanto": 34
   },
   "speciesPlacementsByRegion": {
-    "johto": 496,
+    "johto": 495,
     "kanto": 278
   },
   "speciesPlacementsByGenerationAndRegion": {
@@ -44,7 +44,7 @@
       "kanto": 22
     },
     "7": {
-      "johto": 39,
+      "johto": 38,
       "kanto": 24
     },
     "8": {

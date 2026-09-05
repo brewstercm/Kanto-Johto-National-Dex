@@ -56,10 +56,15 @@ def main() -> None:
         'local regisMap,regisBadge=questDefinition(',
         'local lunarMap,lunarBadge=questDefinition(',
         '{"knd_has_badge",badge}',
+        'placements.gifts[family.gift.species]',
+        '{"give_pokemon",gift.species,gift.level or 5}',
     )
     for snippet in required_runtime:
         if snippet not in runtime:
             failures.append(f"missing runtime integration: {snippet}")
+
+    if 'species="POIPOLE",family="LIGHT",after="NECROZMA",level=40' not in catalog:
+        failures.append("Poipole is not configured as the post-Necrozma LIGHT quest gift")
 
     reported = qa["generationProfiles"]["gen2"]["researcherMaps"]
     if reported != {key: row["map"] for key, row in researchers.items()}:

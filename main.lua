@@ -62,6 +62,23 @@ local nativeRelocations = ownModule("data/kanto_native_relocations.lua")
 local progressionSpecials = ownModule("data/progression_specials.lua")
 local evolutionStages = ownModule("data/evolutions/generated/001.lua")
 local generationLimits={151,251,386,493,649,721,809,905,1025}
+
+-- Quest gifts are not wild encounters. Filter generated legacy rows at load
+-- time so old encounter-source snapshots cannot leak them back into either
+-- generation's active tables or Pokédex AREA data.
+local giftOnly={}
+for _,row in ipairs(progressionSpecials.giftSpecies or {}) do
+  giftOnly[row.species]=true
+end
+for _,dataset in ipairs({gen1ExtraEncounters,gen2ExtraEncounters}) do
+  for _,terrains in pairs((dataset and dataset.maps) or {}) do
+    for _,pool in pairs(terrains) do
+      for index=#pool,1,-1 do
+        if giftOnly[pool[index].species] then table.remove(pool,index) end
+      end
+    end
+  end
+end
 local function generationOf(species)
   local art=dexArt and dexArt[species]
   local dex=art and tonumber(art.dex)

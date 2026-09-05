@@ -109,6 +109,9 @@ return {
   },
   nativeStatics={"ARTICUNO","ZAPDOS","MOLTRES","MEWTWO"},
   gen2NativeStatics={"RAIKOU","ENTEI","SUICUNE","LUGIA","HO_OH"},
+  giftSpecies={
+    {dex=803,species="POIPOLE",family="LIGHT",after="NECROZMA",level=40},
+  },
   -- G/S/C keeps the same legendary families and capture prerequisites, but
   -- sends the player through a separate Johto research network.  The map and
   -- badge overrides are selected only by the Gen 2 runtime; R/B/Y continues
@@ -128,7 +131,7 @@ return {
       CREATION={map="BLACKTHORN_CITY",badge="RISING"},
       SEA={map="ROUTE_40",badge="RISING"},
       SINNOH_WONDERS={map="LAKE_OF_RAGE",badge="RISING"},
-      SWORDS={map="ROUTE_36",badge="RISING"},
+      SWORDS={map="VIOLET_CITY",badge="RISING"},
       FORCES={map="ROUTE_42",badge="RISING"},
       TAO={map="MAHOGANY_TOWN",badge="RISING"},
       UNOVA_RELICS={map="GOLDENROD_CITY",badge="RISING"},
@@ -204,7 +207,8 @@ return {
       stages={{"TAPU_KOKO","TAPU_LELE","TAPU_BULU","TAPU_FINI"}}},
     {id="LIGHT",title="LIGHT TRIO",method="QUEST: LIGHT",
       map="SAFFRON_CITY",badge="EARTHBADGE",
-      stages={{"COSMOG"},{"COSMOEM"},{"SOLGALEO","LUNALA"},{"NECROZMA"}}},
+      stages={{"COSMOG"},{"COSMOEM"},{"SOLGALEO","LUNALA"},{"NECROZMA"}},
+      gift={species="POIPOLE",after="NECROZMA",level=40}},
     {id="ALOLA_WONDERS",title="ALOLA WONDERS",method="QUEST: A. WONDERS",
       map="ROUTE_15",badge="VOLCANOBADGE",
       stages={{"MAGEARNA","MARSHADOW","ZERAORA"}}},

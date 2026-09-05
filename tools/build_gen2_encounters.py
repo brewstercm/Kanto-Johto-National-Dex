@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+GIFT_ONLY = {"POIPOLE"}
 IDENT = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
 NUMBER = re.compile(r"-?\d+(?:\.\d+)?")
 
@@ -368,6 +369,8 @@ def main():
                 counts.get(row[0], 0), row[0]))
             counts[map_id] = counts.get(map_id, 0) + 1
             level = max(minimum, target_level - 2, min(old_level, target_level + 2))
+            if species in GIFT_ONLY:
+                continue
             maps.setdefault(map_id, {}).setdefault(habitat, []).append(
                 {"species": species, "level": level})
             regions[map_id] = region
@@ -394,7 +397,8 @@ def main():
 
     assigned = [row["species"] for terrains in maps.values()
                 for rows in terrains.values() for row in rows]
-    if len(assigned) != 774 or len(set(assigned)) != 774:
+    expected=len(observations())-len(GIFT_ONLY)
+    if len(assigned) != expected or len(set(assigned)) != expected:
         raise AssertionError((len(assigned), len(set(assigned))))
     johto = sum(len(rows) for map_id, terrains in maps.items()
                 if regions[map_id] == "johto" for rows in terrains.values())

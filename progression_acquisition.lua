@@ -655,7 +655,7 @@ return function(mod, catalog, sprites, gen1, gameVersion)
   local hideKantoStarterAides=gen1
     and normalizedVersion:find("yellow",1,true)~=nil
   local placements, starterNumber, visibleStarterGifts = {
-    starters={},statics={},quests={},hiddenStarterGifts={},
+    starters={},gifts={},statics={},quests={},hiddenStarterGifts={},
     adjustedStarterCoordinates={}},0,0
   for _, group in ipairs(catalog.starterGroups or {}) do
     for _, species in ipairs(group.species or {}) do
@@ -1119,17 +1119,48 @@ return function(mod, catalog, sprites, gen1, gameVersion)
       {"show_text",researchProfessor.." asked me to look for you!\fHe wants us to investigate the "..family.title..".\fBegin by finding "..first..". Check each POKEDEX AREA page for the recorded site."},
       {"set_field",started,true},{"jump","end"},
       {"label","briefing"},
-      {"show_text",table.concat(sequence,".\f")..".\fEach later stage will answer after every earlier POKEMON has been caught."},
-      {"jump","end"},{"label","locked"},
-      {"show_text",researchProfessor.." asked me to look for you!\fIf you have the "..badgeName..", I am supposed to share his research on the "..family.title.."."},
     }
+    if family.gift then
+      local gift=family.gift
+      local received="mod:knd_quest_gift_"..gift.species
+      script[#script+1]={"knd_has_caught_all",gift.after}
+      script[#script+1]={"jump_if_false","quest_status"}
+      script[#script+1]={"check_flag",received}
+      script[#script+1]={"jump_if_true","gift_received"}
+      script[#script+1]={"show_text",researchProfessor.." asked me to thank you for completing the investigation.\fWe recovered a young "..gift.species:gsub("_"," ").." near NECROZMA'S site. Please take care of it."}
+      script[#script+1]={"give_pokemon",gift.species,gift.level or 5}
+      script[#script+1]={"jump_if_false","gift_full"}
+      script[#script+1]={"set_field",received,true}
+      script[#script+1]={"show_text",gift.species:gsub("_"," ").." joined you!"}
+      script[#script+1]={"jump","end"}
+      script[#script+1]={"label","gift_received"}
+      script[#script+1]={"show_text","Take good care of the "..gift.species:gsub("_"," ").." entrusted to you."}
+      script[#script+1]={"jump","end"}
+      script[#script+1]={"label","gift_full"}
+      script[#script+1]={"show_text","Your party and PC BOXES are full. Please make room for "..gift.species:gsub("_"," ").."."}
+      script[#script+1]={"jump","end"}
+      script[#script+1]={"label","quest_status"}
+    end
+    script[#script+1]={"show_text",table.concat(sequence,".\f")..".\fEach later stage will answer after every earlier POKEMON has been caught."}
+    script[#script+1]={"jump","end"}
+    script[#script+1]={"label","locked"}
+    script[#script+1]=
+      {"show_text",researchProfessor.." asked me to look for you!\fIf you have the "..badgeName..", I am supposed to share his research on the "..family.title.."."}
     registerResearcher(family.id,researcherMap,script)
     placements.quests[family.id].requiredBadge=badge
     placements.quests[family.id].stages=family.stages
+    if family.gift then
+      local questPlace=placements.quests[family.id]
+      placements.gifts[family.gift.species]={map=questPlace.map,
+        nativeMap=questPlace.nativeMap,label=questPlace.label,
+        region=questPlace.region,x=questPlace.x,y=questPlace.y,
+        level=family.gift.level,after=family.gift.after}
+    end
   end
 
   mod.exports.progressionPlacements=placements
   mod.exports.progressionAcquisition={starterGifts=visibleStarterGifts,
+    questGifts=#(catalog.giftSpecies or {}),
     allocatedStarterSlots=starterNumber,hiddenStarterGifts=placements.hiddenStarterGifts,
     distributedStatics=staticCount,nativeStatics=native,legacyAnnexEntrance=false,
     familyQuests={birds=true,regis=true,lunar=true,

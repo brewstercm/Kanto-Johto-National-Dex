@@ -200,6 +200,17 @@ return function(mod, encounters, extraEncounters, catalog, dexArt, gen1, placeme
     end
   end
 
+  for _,gift in ipairs(catalog.giftSpecies or {}) do
+    local placed=placements and placements.gifts and placements.gifts[gift.species]
+    areas[gift.species]={locations={},seen={},method="GIFT: AFTER "..gift.after}
+    if #areas[gift.species].method>18 then
+      areas[gift.species].method=areas[gift.species].method:sub(1,18)
+    end
+    if placed then
+      addLocation(gift.species,placed.map,placed.label,placed.region,placed.nativeMap)
+    end
+  end
+
   local function firstLabel(row)
     local loc = row and row.locations and row.locations[1]
     return loc and loc.label or nil

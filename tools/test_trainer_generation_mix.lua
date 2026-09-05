@@ -73,6 +73,19 @@ assert(mix.choose(pool[2],"PIDGEY","NORMAL",1,first,"DRAGON")=="PIDGEY")
 assert(mix.choose({{id="BIRD",primaryType="NORMAL",types={"NORMAL","FLYING"},stage=2},
   {id="MAMMAL",primaryType="NORMAL",types={"NORMAL"},stage=1}},
   "PIDGEY","NORMAL",1,first,"FLYING")=="BIRD")
+-- Early trainers cannot receive overpowered or implausibly evolved species.
+local earlyRows={
+  {id="POIPOLE",primaryType="POISON",types={"POISON"},stage=1,bst=420,minimumLevel=1},
+  {id="CROBAT",primaryType="POISON",types={"POISON","FLYING"},stage=3,bst=535,minimumLevel=30},
+  {id="ZUBAT",primaryType="POISON",types={"POISON","FLYING"},stage=1,bst=245,minimumLevel=1},
+}
+assert(mix.choose(earlyRows,"RATTATA","NORMAL",1,first,nil,8,253)=="ZUBAT")
+assert(mix.choose({earlyRows[1]},"RATTATA","NORMAL",1,first,nil,8,253)=="RATTATA")
+assert(mix.choose({earlyRows[2]},"ZUBAT","POISON",1,first,nil,9,245)=="ZUBAT")
+local giftPool=mix.buildPool(mod,dex,stages,
+  {staticSpecies={{species="LUGIA"}},giftSpecies={{species="HOOTHOOT"}}})
+assert(#giftPool[2]==2 and giftPool[2][1].id=="FURRET"
+  and giftPool[2][2].id=="SENTRET")
 local classes={
   BIRD_KEEPER={index=24,trainers={member,member}},
   FALKNER={index=1,trainers={member}},

@@ -23,8 +23,9 @@ def main():
                     failures.append(f"premature {species} on {map_id}")
                 if not target - 2 <= level <= target + 2:
                     failures.append(f"area level mismatch {species} on {map_id}")
-    assert set(assigned) == set(observations()), "species coverage changed"
-    assert len(assigned) == 774
+    expected=set(observations())-{"POIPOLE"}
+    assert set(assigned) == expected, "species coverage changed"
+    assert len(assigned) == len(expected)
     assert overlay["ROUTE_46"]["grass"]
     assert all(row["level"] <= 6 for row in overlay["ROUTE_46"]["grass"])
     assert assigned["KIRLIA"][1] >= 20

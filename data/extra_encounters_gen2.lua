@@ -873,7 +873,6 @@ return {
         {species="SPINDA",level=18},
         {species="HERDIER",level=16},
         {species="ARCHEN",level=17},
-        {species="POIPOLE",level=17},
         {species="FLETCHINDER",level=18},
       },
       water={
